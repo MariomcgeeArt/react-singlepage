@@ -1,0 +1,22 @@
+.CatagoryList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.CatagoryList > button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(30, 235, 218);
+    border-radius: 0.5rem;
+    background-color: black;
+    color: rgb(216, 173, 108);
+}
+
+
+
+button.selected {
+    background-color: #eee;
+    color: #333;
+}
