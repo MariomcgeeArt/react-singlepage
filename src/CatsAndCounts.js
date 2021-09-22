@@ -2,6 +2,8 @@ import data from './data'
 import { catsAndCounts } from './data'
 import './CatagoryList.css'
 
+
+
 function CatsAndCounts (props) {
     const {category, onClick} = props
     return (

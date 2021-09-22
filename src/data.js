@@ -26,6 +26,8 @@ const catsAndCounts = uniqueCategeories.map( name => {
     return { name, count: categoriesAndCounts[name] }
 })
 
+catsAndCounts.push({name: 'All', count: data.length})
+
 
 
 
