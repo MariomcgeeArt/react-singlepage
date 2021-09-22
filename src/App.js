@@ -5,6 +5,7 @@ import data, {allCategories, uniqueCategeories, categoriesAndCounts, catsAndCoun
 import ProductList from './ProductList'
 import CatsAndCounts from './CatsAndCounts'
 import Header from './Header.js'
+import Inventory from './Inventory.js'
 
 
 
@@ -22,17 +23,22 @@ function App() {
   return (
     <div className= 'App'>
       <Header
-          title = "Productify" 
-          productCount= {data.length} 
-          categoryCount = {uniqueCategeories.length} />
+        title = "Productify" 
+        productCount= {data.length} 
+        categoryCount = {uniqueCategeories.length} 
+      />
+
       <CatsAndCounts
        category = {category}
        onClick ={ newCategory => setCategory(newCategory)}
       />
+
       <ProductList
-       category = {category} />      
-      </div>
-    
+       category = {category} 
+      />
+
+       <Inventory/>      
+      </div>  
   );
 }
 
